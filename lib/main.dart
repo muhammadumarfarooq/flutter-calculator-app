@@ -43,45 +43,45 @@ class _MyHomePageState extends State<MyHomePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
-                  CustomButton(title: 'AC', bgColor: Color(0xff929193)),
-                  CustomButton(title: '+/-', bgColor: Color(0xff929193)),
-                  CustomButton(title: '%', bgColor: Color(0xff929193)),
+                  CustomButton(title: 'AC'),
+                  CustomButton(title: '+/-'),
+                  CustomButton(title: '%'),
                   CustomButton(title: '/', bgColor: Color(0xfffe8a01)),
                 ],
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
-                  CustomButton(title: '7', bgColor: Color(0xff929193)),
-                  CustomButton(title: '8', bgColor: Color(0xff929193)),
-                  CustomButton(title: '0', bgColor: Color(0xff929193)),
+                  CustomButton(title: '7'),
+                  CustomButton(title: '8'),
+                  CustomButton(title: '0'),
                   CustomButton(title: 'x', bgColor: Color(0xfffe8a01)),
                 ],
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
-                  CustomButton(title: '4', bgColor: Color(0xff929193)),
-                  CustomButton(title: '5', bgColor: Color(0xff929193)),
-                  CustomButton(title: '6', bgColor: Color(0xff929193)),
+                  CustomButton(title: '4'),
+                  CustomButton(title: '5'),
+                  CustomButton(title: '6'),
                   CustomButton(title: '-', bgColor: Color(0xfffe8a01)),
                 ],
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
-                  CustomButton(title: '1', bgColor: Color(0xff929193)),
-                  CustomButton(title: '2', bgColor: Color(0xff929193)),
-                  CustomButton(title: '3', bgColor: Color(0xff929193)),
+                  CustomButton(title: '1'),
+                  CustomButton(title: '2'),
+                  CustomButton(title: '3'),
                   CustomButton(title: '+', bgColor: Color(0xfffe8a01)),
                 ],
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
-                  CustomButton(title: '0', bgColor: Color(0xff929193)),
-                  CustomButton(title: '.', bgColor: Color(0xff929193)),
-                  CustomButton(title: 'DEL', bgColor: Color(0xff929193)),
+                  CustomButton(title: '0'),
+                  CustomButton(title: '.'),
+                  CustomButton(title: 'DEL'),
                   CustomButton(title: '=', bgColor: Color(0xfffe8a01)),
                 ],
               ),
@@ -97,7 +97,8 @@ class CustomButton extends StatelessWidget {
   final String title;
   final Color bgColor;
 
-  const CustomButton({Key? key, required this.title, required this.bgColor})
+  const CustomButton(
+      {Key? key, required this.title, this.bgColor = const Color(0xff929193)})
       : super(key: key);
 
   @override
